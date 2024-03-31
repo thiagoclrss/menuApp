@@ -1,5 +1,8 @@
 package com.example.menuapp.model
 
-data class Product(var name : String, var time : String, var price : String)
+data class Product(var name : String,
+                   var time : String,
+                   var price : String,
+                   var isChecked : Boolean = false)
 
 

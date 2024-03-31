@@ -19,9 +19,9 @@ class ProductSectionAdapter (private val sectionList : List<ProductSection>) :
     override fun onBindViewHolder(holder: CollectionViewHolder, position: Int) {
         holder.binding.apply {
             val section = sectionList[position]
-            sectionName.text =  section.title
-            val productAdapter = ProductAdapter(section.producs)
-            rvSection.adapter = productAdapter
+            sectionName.text =  section.title //titulo da seção dos produtos
+            val productAdapter = ProductAdapter(section.products)
+            rvSection.adapter = productAdapter //lista de produtos para a recyclerview
         }
     }
 

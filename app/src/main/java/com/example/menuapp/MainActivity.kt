@@ -2,6 +2,7 @@ package com.example.menuapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.example.menuapp.adapter.ProductSectionAdapter
 import com.example.menuapp.databinding.ActivityMainBinding
 import com.example.menuapp.model.Product
@@ -20,36 +21,8 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
             rvMain.adapter = ProductSectionAdapter(SampleData.sectionList)
         }
-
-
-        val starter = arrayOf(
-            "Batata Frita", "Bolinha de Queijo", "Macaxeira Frita", "Pão de Alho","Batata Frita", "Bolinha de Queijo", "Macaxeira Frita", "Pão de Alho",
-            "Batata Frita", "Bolinha de Queijo", "Macaxeira Frita", "Pão de Alho","Batata Frita", "Bolinha de Queijo", "Macaxeira Frita", "Pão de Alho"
-        )
-
-        val mainCourse = arrayOf(
-            "Batata Frita", "Bolinha de Queijo", "Macaxeira Frita", "Pão de Alho"
-        )
-
-        val drinks = arrayOf(
-            "Batata Frita", "Bolinha de Queijo", "Macaxeira Frita", "Pão de Alho"
-        )
-
-        val dessert = arrayOf(
-            "Batata Frita", "Bolinha de Queijo", "Macaxeira Frita", "Pão de Alho"
-        )
-
-        val time = arrayOf(
-            "(10 minutos)", "(8 minutos)", "(5 minutos)", "(4 minutos)","(10 minutos)", "(8 minutos)", "(5 minutos)", "(4 minutos)",
-            "(10 minutos)", "(8 minutos)", "(5 minutos)", "(4 minutos)","(10 minutos)", "(8 minutos)", "(5 minutos)", "(4 minutos)"
-        )
-
-        val price = arrayOf(
-            "R$ 10,00", "R$ 20,00", "R$ 30,00", "R$ 40,00","R$ 10,00", "R$ 20,00", "R$ 30,00", "R$ 40,00",
-            "R$ 10,00", "R$ 20,00", "R$ 30,00", "R$ 40,00","R$ 10,00", "R$ 20,00", "R$ 30,00", "R$ 40,00"
-        )
-
-
-
     }
+
+
+
 }
